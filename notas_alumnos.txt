@@ -1,0 +1,15 @@
+Juan 5.5
+Ana 6.0
+
+María 6.1
+Pedro 4.8
+Diego 5.5
+
+Jesus 5.3
+
+Marta 4.6
+Jeremias 7.0
+
+Carlos 5.9
+Pepe 6.0
+Jhon 6.4
