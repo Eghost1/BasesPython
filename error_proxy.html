@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Bloqueado</title>
+    <style>
+        body {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 2em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            border-top: 5px solid #e45c64;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid #e45c64;
+            padding-bottom: 10px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2em;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .icon {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .details {
+            background-color: #f2f2f2;
+            padding: 1em;
+            border-radius: 5px;
+            margin-top: 1.5em;
+            font-size: 0.9em;
+        }
+        .footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #856464;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚫</div>
+        <h1>Este sitio ha sido bloqueado</h1>
+        <p>No puedes acceder a este sitio web debido a las políticas de red implementadas por tu organización.</p>
+        <p>El sitio solicitado ha sido clasificado como restringido según las políticas de seguridad y uso de Internet vigentes.</p>
+        
+        <div class="details">
+            <h3>Información:</h3>
+            <ul>
+                <li>URL solicitada: <span id="blocked-url">URL</span></li>
+                <li>Categoría: <span id="category">Sin clasificar</span></li>
+                <li>ID de bloqueo: <span id="block-id">PX-<script>document.write(Math.floor(Math.random()*90000)+10000)</script></span></li>
+            </ul>
+        </div>
+        
+        <p>Si crees que este sitio web ha sido bloqueado por error o necesitas acceso para fines laborales legítimos, por favor contacta al administrador de red o al departamento de TI de tu organización.</p>
+        
+        <div class="footer">
+            <p>Sistema de filtrado de contenido web | Proxy de Seguridad</p>
+        </div>
+    </div>
+
+    <script>
+        // Muestra la URL bloqueada
+        document.getElementById('blocked-url').textContent = window.location.href || "No disponible";
+        
+        // Función para volver a la página anterior
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
